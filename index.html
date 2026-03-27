@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlowPilot AI</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="brand-icon">FP</div>
+          <div>
+            <h2>FlowPilot AI</h2>
+            <p>Smart Productivity Engine</p>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <h3>What it does</h3>
+          <ul>
+            <li>Task planning</li>
+            <li>Priority analysis</li>
+            <li>Timeline suggestions</li>
+            <li>AI productivity help</li>
+          </ul>
+        </div>
+
+        <div class="side-card">
+          <h3>How to use</h3>
+          <p>Type one question or multiple tasks.</p>
+          <p class="example">
+            Example:<br />
+            meeting at 11, finish ppt, reply emails, study math
+          </p>
+        </div>
+      </aside>
+
+      <main class="main-panel">
+        <header class="topbar">
+          <div>
+            <h1>FlowPilot AI</h1>
+            <p>Your intelligent planner for daily work and focus</p>
+          </div>
+          <button class="clear-btn" onclick="clearChat()">Clear</button>
+        </header>
+
+        <section id="chatBox" class="chat-area">
+          <div class="message ai-message">
+            <div class="msg-label">FlowPilot AI</div>
+            <div class="msg-text">
+              Hello! Ask me anything, or enter multiple tasks separated by
+              commas and I will help you organize them.
+            </div>
+          </div>
+        </section>
+
+        <section class="input-bar">
+          <input
+            id="userInput"
+            type="text"
+            placeholder="Type tasks like: meeting at 11, finish ppt, reply emails"
+          />
+          <button class="mic-btn" onclick="startVoice()">🎤</button>
+          <button class="send-btn" onclick="sendMessage()">Analyze</button>
+        </section>
+      </main>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
